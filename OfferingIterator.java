@@ -15,7 +15,6 @@ public class OfferingIterator implements ListIterator {
 
 
 	public void MoveToHead() {
-
 	}
 
 
