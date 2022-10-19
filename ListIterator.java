@@ -1,3 +1,4 @@
+import java.lang.Object;
 public abstract interface ListIterator {
 
 
