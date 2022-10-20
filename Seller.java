@@ -1,6 +1,10 @@
 
 public class Seller extends Person {
 
+	protected Seller(ProductMenu productMenu) {
+		super(productMenu);
+	}
+
 	public void showMenu() {
 
 	}
