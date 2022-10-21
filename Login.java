@@ -35,6 +35,7 @@ public class Login {
                 sell = ss.nextLine();
                 String[] temps = sell.split(":");
                 if(temps[0].equals(username) && temps[1].equals(password)){
+                    System.out.println("Welcome to the Seller Portal");
                    userType= 1;
                    break;
                 }
@@ -44,6 +45,7 @@ public class Login {
                 buy = sb.nextLine();
                 String[] tempb = buy.split(":");
                 if(tempb[0].equals(username) && tempb[1].equals(password)){
+                    System.out.println("Welcome to the Buyer Portal");
                     userType= 0;
                     break;
                 }
