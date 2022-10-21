@@ -17,6 +17,8 @@ public class Facade {
 
 
 	public boolean login() {
+		Login logi = new Login();
+		UserType=logi.login();
 return false;
 
 	}

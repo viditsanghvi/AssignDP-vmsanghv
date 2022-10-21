@@ -1,4 +1,4 @@
-
+import java.util.List;
 public class OfferingIterator implements ListIterator {
 
 	private OfferingList offeringList;
