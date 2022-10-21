@@ -6,6 +6,7 @@ public class Trading {
 
 	public void accept(NodeVisitor visitor)
 		{
+			// Visitor pattern is being used in this method
 			visitor.visitTrading(offeringList.trading);
 		}
 

@@ -4,14 +4,14 @@ import java.util.List;
 public class OfferingList extends ArrayList {
 
 	private OfferingIterator offeringIterator;
-	private List<Offering> offeringList;
+	private List<Offering> Listofofferings;
 	public OfferingList() {
-		offeringList = new ArrayList<>();
+		Listofofferings = new ArrayList<>();
 	}
 	protected Trading trading;
 
 	public ListIterator createIterator() {
-		return new OfferingIterator(this.offeringList);
+		return new OfferingIterator(this.Listofofferings);
 	}
 
 }

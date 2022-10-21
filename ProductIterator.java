@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class ProductIterator implements ListIterator {
-
+// The iterator pattern is being implemented in this class
 	private ClassProductList classProductList;
 	private List<Product> PList;
 

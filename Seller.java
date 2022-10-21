@@ -12,11 +12,12 @@ public class Seller extends Person {
 
 
 	public ProductMenu CreateProductMenu() {
+		// Here I have implemeted bridge pattern
 		if(productCategory == 1){
-			this.theProductMenu = new MeatProductMenu();
+			this.theProductMenu = new ProduceProductMenu();
 			return this.theProductMenu;
 		} else{
-			this.theProductMenu = new ProduceProductMenu();
+			this.theProductMenu = new MeatProductMenu();
 			return this.theProductMenu;
 
 		}

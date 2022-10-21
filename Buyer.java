@@ -1,6 +1,9 @@
 import javax.swing.plaf.metal.MetalLookAndFeel;
 import java.util.Objects;
 
+// This used bridge pattern
+
+
 public class Buyer extends Person {
 	private int productCategory;
 

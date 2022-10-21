@@ -3,9 +3,14 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Scanner;
 
+// This method is used to seperate meat and produce items
+
 public class ProduceProductMenu extends ProductMenu {
 
 	public void showMenu() {
+		// This method is used to seperate meat and produce items
+
+
 		File file = new File(
 				"TextFiles/ProductInfo.txt");
 

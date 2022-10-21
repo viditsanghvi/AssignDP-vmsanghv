@@ -4,6 +4,9 @@ import java.io.FileReader;
 import java.util.Scanner;
 public class Login {
 
+    // this class is used to check for login credentials from the textfile
+
+
     int userType;
 
     Login() {
@@ -12,11 +15,14 @@ public class Login {
 
     public int login() {
 
-        System.out.println("Enter Login Credential:");
-        System.out.println("Enter User Name:");
+        System.out.println("Hello, Please Enter Login Credential:");
+        System.out.println();
+        System.out.println("Please Enter Your UserName:");
+
         Scanner scan = new Scanner(System.in);
         String username = scan.next();
-        System.out.println("Enter Password:");
+        System.out.println("Please Enter Your Password:");
+
         String password = scan.next();
         File fileseller = new File(
                 "textFiles/SellerInfo.txt");

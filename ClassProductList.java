@@ -38,12 +38,16 @@ public class ClassProductList extends ArrayList {
 		}
 	}
 	public void accept(NodeVisitor visitor) {
-		ProductIterator iterator = new ProductIterator(products);
-		System.out.println("Using iterator pattern to access elements in product list");
+
+//	We are using iterator and vistor pattern in this method
+
+
+		ProductIterator itr = new ProductIterator(products);
+		System.out.println("Iterator is used to add the below elements in the list");
 		System.out.println();
-		System.out.println();
-		while (iterator.hasNext()) {
-			Product product = iterator.Next();
+		System.out.println("The below list shows the available items");
+		while (itr.hasNext()) {
+			Product product = itr.Next();
 			visitor.visitProduct(product);
 		}
 	}

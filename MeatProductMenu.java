@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class MeatProductMenu extends ProductMenu {
 
 	public void showMenu() {
+		// This method is used to seperate meat and produce items
+
 		File file = new File(
 				"TextFiles/ProductInfo.txt");
 
