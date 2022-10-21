@@ -38,7 +38,15 @@ public class ClassProductList extends ArrayList {
 		}
 	}
 	public void accept(NodeVisitor visitor) {
-
+		ProductIterator iterator = new ProductIterator(products);
+		System.out.println("Using iterator pattern to access elements in product list");
+		System.out.println();
+		System.out.println();
+		while (iterator.hasNext()) {
+			Product product = iterator.Next();
+			visitor.visitProduct(product);
+		}
 	}
+
 
 }

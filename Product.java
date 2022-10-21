@@ -17,5 +17,8 @@ public class Product {
 	private ClassProductList classProductList;
 
 	private Trading trading;
+	public Trading getTrading() {
+		return this.trading;
+	}
 
 }

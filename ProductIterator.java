@@ -15,7 +15,7 @@ public class ProductIterator implements ListIterator {
 
 	public Product Next() {
 		Product product = PList.get(position);
-		position += 1;
+		position = position + 1;
 		return product;
 	}
 

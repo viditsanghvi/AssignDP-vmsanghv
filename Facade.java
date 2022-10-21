@@ -20,12 +20,17 @@ public class Facade {
 
 	public boolean login() {
 		Login logi = new Login();
-		UserType=logi.login();
-		createUser(new UserInfoItem());
-return false;
 
+			UserType = logi.login();
+		if (UserType != -1) {
+			createUser(new UserInfoItem());
+			return true;
+		} else {
+			System.out.println("Wrong Credentials try again");
+			return false;
+
+		}
 	}
-
 
 	public void addTrading() {
 
@@ -52,7 +57,9 @@ return false;
 	}
 
 	 void remind() {
-
+		 ReminderVisitor remind = new ReminderVisitor();
+		 ClassProductList CL = new ClassProductList();
+		 CL.accept(remind);
 	}
 
 
@@ -64,14 +71,7 @@ return false;
 			Buyer buyer = new Buyer(nProductCategory);
 			buyer.CreateProductMenu();
 			buyer.showMenu();
-//			if (choice == 1){
-//				Buyer buyer = new Buyer(new MeatProductMenu(),);
-//				buyer.showMenu();
-//			} else if (choice ==2){
-//				Buyer buyer = new Buyer(new ProduceProductMenu());
-//			}else{
-//				System.out.println("Invalid choice!! try again");
-//			}
+
 
 		}
 		else{
@@ -81,18 +81,14 @@ return false;
 			Seller seller = new Seller(nProductCategory);
 			seller.CreateProductMenu();
 			seller.showMenu();
+			remind();
 
-//			if (choice == 1){
-//				Seller seller = new Seller(new MeatProductMenu());
-//			} else if (choice ==2){
-//				Seller seller = new Seller(new ProduceProductMenu());
-//			}else{
-//				System.out.println("Invalid choice!! try again");
-//			}
 		}
 	}
 
-
+	public Product getProduct(){
+		return theSelectedProduct;
+	}
 	public void createProductList() {
 
 	}
